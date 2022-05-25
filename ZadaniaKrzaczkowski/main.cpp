@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
-/*    Zadanie 2.2.1
+
+///////////// ZADANIE 2.2.2
+
+
+/*    
 int WartoscBezwzgledna(int liczba) {
 	if (liczba > 0)
 		return liczba;
@@ -16,8 +20,10 @@ int main() {
 */
 
 
+///////////// ZADANIE 2.2.2
 
-/*   Zadanie 2.2.2
+
+/*   
 long long silnia(long long liczba) {
 	long long wynik = 1;
 	for (liczba; liczba > 1 ; liczba--) {
@@ -37,3 +43,30 @@ int main(){
 	}
 	cout << silnia(n);
 }*/
+
+///////////// ZADANIE 2.2.3
+
+/*
+int funkcja(int liczba) {
+	int k = 1;
+	for (int i = 1; i < liczba; i++) {
+		liczba / i;
+		if (liczba % i == 0) {
+			k = i;
+		}
+	}
+		return k;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	while ((n < 2) || (n == 2))
+	{
+		if ((n < 2) || (n == 2)) {
+			cout << "Liczba musi byc wieksza od 2, podaj odpowiednia wartosc: "; cin >> n;
+		}
+	}
+	cout << funkcja(n);
+}*/
+
