@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-///////////// ZADANIE 2.2.2
+///////////// ZADANIE 2.2.1
 
 
 /*    
@@ -69,4 +69,63 @@ int main() {
 	}
 	cout << funkcja(n);
 }*/
+
+
+///////////// ZADANIE 2.2.4
+
+/*int funkcja(int liczba) {
+	int wynik = 1;
+	for (int i = 1; i <= liczba; i++) {
+		 wynik *= 2;
+	}
+	return wynik;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	while (n <= 0)
+	{
+		if (n <= 0) {
+			cout << "Liczba musi byc wieksza od 0, podaj odpowiednia wartosc: "; cin >> n;
+		}
+	}
+	cout << funkcja(n);
+	}*/
+
+
+///////////// ZADANIE 2.2.5
+
+
+/*
+float funkcja(int liczba) {
+	float wynik = 1;
+
+	if (liczba == 0)
+		return 1;
+	if(liczba > 0) {
+		for (int i = 1; i <= liczba; i++) {
+			wynik *= 2;
+		}
+		return wynik;
+	}
+	if (liczba < 0) {
+
+		for (int i = -1; i >= liczba; i--) {
+			wynik *= 2;
+		}
+		return wynik;
+	}
+}
+
+int main() {
+	int n;
+	cin >> n;
+
+	if (n >= 0)
+		cout << funkcja(n);
+	else
+		cout << "1/" << funkcja(n);
+}*/
+
 
