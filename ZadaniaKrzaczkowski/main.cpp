@@ -129,3 +129,83 @@ int main() {
 }*/
 
 
+/////Zadanie 6.2.5
+
+//funkcja dla zadania 6.2.1
+/*
+int*** tablica3D(unsigned int n, unsigned int m, unsigned int o) {
+
+	int*** tab = new int** [n];
+
+	for (int i = 0; i < n; i++) {
+		tab[i] = new int* [m];
+
+		for (int j = 0; j < m; j++) {
+			tab[i][j] = new int[o];
+		}
+	}
+	return tab;
+}
+
+//funkcja dla zadania 6.2.3
+
+void free(unsigned int n, unsigned int m, unsigned int o, int*** tab) {
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			delete[] tab[i][j];
+		}
+		delete[] tab[i];
+	}
+	delete[] tab;
+}
+
+int main() {
+	unsigned int x; cin >> x;
+	unsigned int y; cin >> y;
+	unsigned int z; cin >> z;
+	free(x, y, z, tablica3D(x, y, z));
+}
+*/
+
+
+////// Zadanie 7.2.7
+
+
+////// Zadanie 7.2.8
+
+
+/*
+struct Student {
+	string imie;
+	string nazwisko;
+	string adres;
+	char pesel[10];
+	string kierunek;
+	char nrLegitymacji[5];
+};
+void dodaj(struct Student* dane) {
+
+	cin >> dane->imie;
+	cin >> dane->nazwisko;
+	getline(cin, dane->adres);
+	getline(cin, dane->kierunek);
+
+	for (int i = 0; i < 10; i++) {
+		cin >> dane->pesel;
+	}
+
+	for (int i = 0; i < 5; i++) {
+		cin >> dane->nrLegitymacji;
+	}
+
+
+}
+int main() {
+	struct Student student;
+	struct Student* ktory;
+	ktory = &student;
+
+	dodaj(ktory);
+}
+*/
